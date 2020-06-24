@@ -5,15 +5,15 @@
 (defmethod! MyTestA ((arg1 number))
     :intitvals '(1)
     :indoc '("Do something x")
-    :icon 245
+    :icon '(7007)
     :doc "Tell someone how to use."
     (+ 10 arg1)
     )
 
 (defmethod! Super-cool-second-function((arg1 number) (arg2 number))
-    :initialvals '(1 '(1))
+    :initialvals '(1 1)
     :indoc '("asdf")
-    :icon 906
+    :icon 7006
     :doc "asdf"
     (do-super-cool-second-function arg1 arg2)
     )
