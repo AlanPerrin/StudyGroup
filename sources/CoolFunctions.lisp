@@ -2,19 +2,20 @@
 
 (in-package :om)
 
-(defmethod! MyTestA ((arg1 number))
-    :intitvals '(1)
+
+(defmethod! mytesta ((arg1 number))
+    :initvals '(1) 
     :indoc '("Do something x")
-    :icon '(7007)
-    :doc "Tell someone how to use."
+:doc "some docs"
+    :icon 906
     (+ 10 arg1)
     )
 
-(defmethod! Super-cool-second-function((arg1 number) (arg2 number))
-    :initialvals '(1 1)
+(defmethod! super-cool-second-function((arg1 number) (arg2 number))
+    :initvals '(1 1)
     :indoc '("asdf")
-    :icon 7006
     :doc "asdf"
+    :icon 7006
     (do-super-cool-second-function arg1 arg2)
     )
 
